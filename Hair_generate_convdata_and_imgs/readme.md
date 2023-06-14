@@ -1,0 +1,1 @@
+sudo apt install libglew-dev libglfw3-dev libgl1-mesa-dev

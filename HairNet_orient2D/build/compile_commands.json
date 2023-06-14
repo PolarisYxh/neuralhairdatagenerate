@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/yxh/Documents/HairNet_DataSetGeneration/HairNet_orient2D/build",
+  "command": "/usr/bin/g++ -I/home/yxh/Documents/HairNet_DataSetGeneration/HairNet_orient2D/Hair_Orient2D/../../_deps/src -isystem /usr/include/opencv4  -fopenmp -g -std=gnu++11 -o CMakeFiles/Orient2D.dir/main.cpp.o -c /home/yxh/Documents/HairNet_DataSetGeneration/HairNet_orient2D/Hair_Orient2D/main.cpp",
+  "file": "/home/yxh/Documents/HairNet_DataSetGeneration/HairNet_orient2D/Hair_Orient2D/main.cpp"
+}
+]

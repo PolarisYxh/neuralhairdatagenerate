@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/build",
+  "command": "/usr/bin/g++ -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/Hair_generate_convdata_and_imgs.dir/main.cpp.o -c /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/main.cpp",
+  "file": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/main.cpp"
+},
+{
+  "directory": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/build",
+  "command": "/usr/bin/g++ -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrand.cpp.o -c /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrand.cpp",
+  "file": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrand.cpp"
+},
+{
+  "directory": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/build",
+  "command": "/usr/bin/g++ -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrands.cpp.o -c /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrands.cpp",
+  "file": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrands.cpp"
+},
+{
+  "directory": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/build",
+  "command": "/usr/bin/g++ -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/cnpy.cpp.o -c /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/cnpy.cpp",
+  "file": "/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/cnpy.cpp"
+}
+]
