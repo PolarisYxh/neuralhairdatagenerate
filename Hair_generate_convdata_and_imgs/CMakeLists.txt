@@ -37,6 +37,7 @@ include_directories(
         ${OPENGL_INCLUDE_DIR}
         #        ${PCL_INCLUDE_DIRS}
         ${CMAKE_CURRENT_SOURCE_DIR}/../_deps/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 #link_directories(${PCL_LIBRARY_DIRS})

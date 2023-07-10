@@ -18,9 +18,9 @@
 
 #include <dirent.h>
 #include <sys/stat.h>
-
+#include "rapidjson/document.h"
 using namespace std;
-
+using namespace rapidjson;
 string vertexshader_fn = "../SimpleVertexShader.vertexshader";
 string fragmentshader_fn = "../SimpleFragmentShader.fragmentshader";
 
@@ -33,7 +33,73 @@ string intToStrLen5(int i)
     s = t;
     return s;
 }
+std::vector<std::vector<int>> readjson(string file_name,string key)
+{
+    std::ifstream file(file_name); // 打开包含JSON数据的文件
+    if (!file.is_open()) {
+        std::cout << "无法打开文件" << std::endl;
+        return {};
+    }
 
+    std::string jsonData((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+    file.close();
+
+    Document document;
+    document.Parse(jsonData.c_str());
+
+    if (document.HasParseError()) {
+        std::cout << "JSON 解析错误" << std::endl;
+        return {};
+    }
+    std::vector<std::vector<int>> result;
+    // 在这里可以根据需要处理 JSON 数据
+    // if (document.IsObject()) {
+    //     for (auto& member : document.GetObject()) {
+    //         const auto& key = member.name.GetString();
+    //         const auto& value = member.value;
+    //     }
+    // }
+
+    const Value& dataArray = document[key.c_str()];
+    if (dataArray.IsArray()) {
+        for (const auto& row : dataArray.GetArray()) {
+            if (row.IsArray()) {
+                std::vector<int> rowValues;
+                for (const auto& value : row.GetArray()) {
+                    if (value.IsInt()) {
+                        rowValues.push_back(value.GetInt());
+                    }
+                }
+                result.push_back(rowValues);
+            }
+        }
+    }
+
+    return result;
+    // if (document.IsObject()) {
+    //     for (auto& member : document.GetObject()) {
+    //         const auto& key = member.name.GetString();
+    //         const auto& value = member.value;
+
+    //         std::cout << "Key: " << key << ", Value: ";
+
+    //         if (value.IsString()) {
+    //             std::cout << value.GetString();
+    //         } else if (value.IsNumber()) {
+    //             std::cout << value.GetDouble();
+    //         } 
+    //         else if (value.IsArray()) {
+    //             for (rapidjson::SizeType i = 0; i < value.Size(); ++i) {
+    //                 auto& x=value.GetArray();
+    //                 // std::cout << " ";
+    //             }
+    //         }// Add more checks for other data types as needed
+
+    //         std::cout << std::endl;
+    //     }
+
+    // return 0;
+}
 void generate_trainingData(string hair_folder, string convdata_folder, string map_roots_fn)
 {
 
@@ -299,7 +365,6 @@ void visualize_and_save_seg_hair_orient(string hair_folder, string hair_convdata
 
     glewExperimental = GL_TRUE;
     glewInit();
-
     // VAO
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
@@ -335,7 +400,7 @@ void visualize_and_save_seg_hair_orient(string hair_folder, string hair_convdata
     while ((directory = readdir(dirp)) != NULL)
     {
         string d_name = directory->d_name;
-        d_name = "DB1.data";
+        // d_name = "DB1.data";
         if (d_name.length() < 5)
             continue;
         if (d_name.substr(d_name.size()-5, d_name.size()) != ".data")
@@ -390,8 +455,9 @@ void visualize_and_save_seg_hair_orient(string hair_folder, string hair_convdata
 
         cout << "Max strand len: " << hair_max_strand_len << "\n";
         // Vec3d eye_pos = Vec3d(0, 1.5, 2.5);
-        float angles[7][2] = {{0,0},{15,0},{-15,0},{0,30},{0,15},{0,-15},{0,-30}};
-        for (int view = 0; view < view_num; view++)
+        std::vector<std::vector<int>> angles = readjson("angs_pair.json",hair_name+".data");
+        // float angles[7][2] = {{0,0},{15,0},{-15,0},{0,30},{0,15},{0,-15},{0,-30}};
+        for (int view = 7; view < angles.size(); view++)
         {
 
             // Draw triangle...

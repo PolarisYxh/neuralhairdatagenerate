@@ -52,28 +52,28 @@ build cmake_object_order_depends_target_Hair_generate_convdata_and_imgs: phony |
 build CMakeFiles/Hair_generate_convdata_and_imgs.dir/main.cpp.o: CXX_COMPILER__Hair_generate_convdata_and_imgs_Debug /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/main.cpp || cmake_object_order_depends_target_Hair_generate_convdata_and_imgs
   DEP_FILE = CMakeFiles/Hair_generate_convdata_and_imgs.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4
+  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/include -isystem /usr/include/opencv4
   OBJECT_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir
   OBJECT_FILE_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir
 
 build CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrand.cpp.o: CXX_COMPILER__Hair_generate_convdata_and_imgs_Debug /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrand.cpp || cmake_object_order_depends_target_Hair_generate_convdata_and_imgs
   DEP_FILE = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrand.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4
+  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/include -isystem /usr/include/opencv4
   OBJECT_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir
   OBJECT_FILE_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair
 
 build CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrands.cpp.o: CXX_COMPILER__Hair_generate_convdata_and_imgs_Debug /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/PiecewiseStrands.cpp || cmake_object_order_depends_target_Hair_generate_convdata_and_imgs
   DEP_FILE = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/PiecewiseStrands.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4
+  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/include -isystem /usr/include/opencv4
   OBJECT_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir
   OBJECT_FILE_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair
 
 build CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/cnpy.cpp.o: CXX_COMPILER__Hair_generate_convdata_and_imgs_Debug /home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/hair/cnpy.cpp || cmake_object_order_depends_target_Hair_generate_convdata_and_imgs
   DEP_FILE = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair/cnpy.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -isystem /usr/include/opencv4
+  INCLUDES = -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/../_deps/src -I/home/yxh/Documents/HairNet_DataSetGeneration/Hair_generate_convdata_and_imgs/include -isystem /usr/include/opencv4
   OBJECT_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir
   OBJECT_FILE_DIR = CMakeFiles/Hair_generate_convdata_and_imgs.dir/hair
 

@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${command:cmake.launchTargetPath}",//for cmake
-            "args": ["/home/yxh/Documents/HairNet/hairstyles/", "../data1/convdata/", "../roots1024/map_roots1024.data", "../neuraldata/", "1"],
+            "args": ["/home/yxh/Documents/HairNet/hairstyles/", "../data1/convdata/", "../roots1024/map_roots1024.data", "/media/yxh/My Passport/ths/neuraldata1/", "1"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
